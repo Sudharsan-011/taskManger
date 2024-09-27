@@ -22,6 +22,7 @@ function App() {
       return{
         ...prevState,
         // selectedProj:undefined,
+        // note every modifications
         tasks:[newTask,...prevState.tasks]
       }
     })
