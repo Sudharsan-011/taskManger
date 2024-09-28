@@ -11,7 +11,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-"deploy": "git add -f dist && git commit -m \"Deploy to GitHub Pages\" && git push origin main --force"
+"deploy": "npm run build && git add docs -f && git commit -m \"Deploy to GitHub Pages\" && git push origin main"
   },
   "dependencies": {
     "react": "^18.2.0",
